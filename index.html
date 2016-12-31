@@ -6,12 +6,16 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Scrub Code</title>
+        <title>Scrubs</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>
+        <ul class="tab">
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openText(event,'Code')">Code</a></li>
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openText(event,'Lore')">Lore</a></li>
+        </ul>
+        <div id="Code" class="tabcontent">
             <h1><strong>THE SCRUB CODE</strong></h1>
             <p><strong>
                 As laid forth by the Master Scrubs, the original four: Messrs Sinon, Chong, Choo and De Jesus.
@@ -31,6 +35,10 @@ and open the template in the editor.
                 <li>A Scrub shall never be ashamed of the scrubby moments in his scrabak life of scrubbatry.</li>
                 <li>Anything can happen with a Scrub. Everything will happen with a club of Scrubs.</li>
             </ol>
+        </div>
+        
+        <div id="Lore" class="tabcontent">
+            <h1><strong>THE SCRUB LORE</strong></h1>
         </div>
     </body>
 </html>
