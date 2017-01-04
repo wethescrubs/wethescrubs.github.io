@@ -57,5 +57,26 @@ and open the template in the editor.
                 On the 23rd day of the 12th month of the year of Harambe's Death, after using a plastic bag to wrap his Secret Santa gift and writing the giftee's name in ballpoint pen, Alden Teo was inducted into the Order for 'outstanding display of typical scrubbiness' and was added to the Lesser Scrubs, becoming Scrub Minor Alden Teo.<br>
                 And thus the Scrub Club was formed.<p>
         </div>
+        
+        <script>
+            function openText(evt, titleName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                
+                // Show the current tab, and add an "active" class to the link that opened the tab
+                document.getElementById(titleName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }</script>
     </body>
 </html>
