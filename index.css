@@ -6,6 +6,7 @@ ul.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+    text-align: center;
 }
 
 /* Float the list items side by side */
